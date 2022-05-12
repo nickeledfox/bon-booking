@@ -1,4 +1,3 @@
-import 'normalize.css';
 import GlobalStyle from './styles';
 
 import Routes from './routes/Routes';

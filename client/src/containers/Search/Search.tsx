@@ -4,44 +4,65 @@ import {
   faPersonWalkingLuggage,
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { SearchBtn } from './styled';
 
+import {
+  SearchBtn,
+  SearchContainer,
+  SearchItem,
+  SearchText,
+  StyledDateRange,
+} from './styled';
 import { Input } from '../../components/Input';
 
-import '../../styles/swarch.css';
+import { format } from 'date-fns';
+import { useState } from 'react';
 
-interface SearchProps {}
-
-const Search = ({}: SearchProps) => {
+const Search = () => {
+  const [openDate, setOpenDate] = useState(false);
+  const [date, setDate] = useState([
+    {
+      startDate: new Date(),
+      endDate: new Date(),
+      key: 'selection',
+    },
+  ]);
   return (
-    <>
-      <div className='headerSearch'>
-        <div className='headerSearchItem'>
-          <FontAwesomeIcon
-            icon={faPersonWalkingLuggage}
-            className='headerIcon'
-          />
-          <Input
-            type='text'
-            placeholder='Where are you going?'
-            className='headerSearchInput'
-          />
-        </div>
+    <SearchContainer>
+      <SearchItem>
+        <FontAwesomeIcon icon={faPersonWalkingLuggage} />
+        <Input type='text' placeholder='Where are you going?' />
+      </SearchItem>
 
-        <div className='headerSearchItem'>
-          <FontAwesomeIcon icon={faCalendarDays} className='headerIcon' />
-          <span className='headerSearchText'>date to date</span>
-        </div>
+      <SearchItem>
+        <FontAwesomeIcon icon={faCalendarDays} />
+        <SearchText onClick={() => setOpenDate(!openDate)}>
+          {`${format(date[0].startDate, 'MM/dd/yyyy')} to ${format(
+            date[0].endDate,
+            'MM/dd/yyyy'
+          )}`}
+        </SearchText>
+        {openDate && (
+          <StyledDateRange
+            editableDateInputs={true}
+            onChange={(item: {
+              selection: { startDate: Date; endDate: Date; key: string };
+            }) => setDate([item.selection])}
+            moveRangeOnFirstSelection={false}
+            ranges={date}
+            minDate={new Date()}
+          />
+        )}
+      </SearchItem>
 
-        <div className='headerSearchItem'>
-          <FontAwesomeIcon icon={faPerson} className='headerIcon' />
-          <span className='headerSearchText'>2 adults 2 children 1 room</span>
-        </div>
-        <div className='headerSearchItem'>
-          <SearchBtn color='dark'>Search</SearchBtn>
-        </div>
-      </div>
-    </>
+      <SearchItem>
+        <FontAwesomeIcon icon={faPerson} />
+        <SearchText>2 adults 2 children 1 room</SearchText>
+      </SearchItem>
+
+      <SearchItem>
+        <SearchBtn color='dark'>Search</SearchBtn>
+      </SearchItem>
+    </SearchContainer>
   );
 };
 export default Search;
