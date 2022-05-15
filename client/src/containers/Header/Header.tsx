@@ -2,13 +2,13 @@ import { Container } from '../../styles';
 import { H } from '../../components/Heading';
 import { MainHeader, Div, Btn } from './styled';
 
-import Search from '../Search/Search';
+import Search from '../Search';
 
 interface HeaderProps {
   active?: any;
 }
 
-const Header: React.FC<HeaderProps> = (props) => {
+export const Header: React.FC<HeaderProps> = (props) => {
   return (
     <>
       <MainHeader>
@@ -33,5 +33,3 @@ const Header: React.FC<HeaderProps> = (props) => {
     </>
   );
 };
-
-export default Header;

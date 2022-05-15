@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import Header from '../containers/Header/Header';
+import Header from '../containers/Header';
 
 const HomePage = () => {
   return (

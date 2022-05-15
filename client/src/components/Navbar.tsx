@@ -3,7 +3,7 @@ import Logo from './Logo';
 import { BtnContainer } from './Button';
 import { Container } from '../styles';
 
-import { ListMenu } from '../containers/List/List';
+import ListMenu from '../containers/List';
 
 const Navbar: React.FC = () => {
   return (
