@@ -34,7 +34,6 @@ const Nav = styled.nav`
 `;
 
 const NavContainer = styled(Container)`
-  color: white;
   display: flex;
   align-items: center;
   justify-content: space-between;

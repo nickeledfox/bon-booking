@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components';
 export const List = styled.ul`
   display: flex;
   gap: 40px;
-  margin-bottom: 50px;
+  margin: 20px 0;
   padding-left: 0;
 `;
 

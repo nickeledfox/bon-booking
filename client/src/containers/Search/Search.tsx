@@ -52,6 +52,7 @@ export const Search = () => {
           <S.SearchText>
             {`Departing ${format(date[0].startDate, 'MM/dd/yyyy')} `}
           </S.SearchText>
+          <strong> · </strong>
           <S.SearchText>
             {`Returning ${format(date[0].endDate, 'MM/dd/yyyy')}`}
           </S.SearchText>

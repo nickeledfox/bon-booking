@@ -6,7 +6,7 @@ import { Container } from '../../styles';
 export const SearchContainer = styled(Container)`
   background: white;
   border: 3px solid #fff;
-  padding: 5px 20px;
+  padding: 0;
   border-radius: var(--border-radius);
   z-index: 20;
   position: relative;
@@ -21,9 +21,18 @@ export const SearchContainer = styled(Container)`
 export const SearchItem = styled.div`
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   gap: 10px;
   color: var(--c-main);
   padding: 1rem;
+  transition: color ease var(--animation-duration);
+
+  &:hover {
+    color: var(--c-5);
+  }
+  &:first-child {
+    margin-left: 10px;
+  }
 `;
 
 export const SearchText = styled.span`

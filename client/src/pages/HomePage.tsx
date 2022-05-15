@@ -1,13 +1,14 @@
 import styled from 'styled-components';
 import { Container } from '../styles';
 import Header from '../containers/Header';
+import Featured from '../containers/Featured';
 
 const HomePage = () => {
   return (
     <>
       <Header />
       <HomeContainer as='section'>
-        {/* <Featured/> */}
+        <Featured />
         <h1 className='homeTitle'>Browse by property type</h1>
         {/* <PropertyList/> */}
         <h1 className='homeTitle'>Homes guests love</h1>

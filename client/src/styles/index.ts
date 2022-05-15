@@ -85,7 +85,7 @@ export const Container = styled.div`
 
 export const FlexWrapper = styled.div`
   display: flex;
-  align-items: stretch;
+  align-items: center;
 `;
 
 export const BaseTitle = styled.span`
