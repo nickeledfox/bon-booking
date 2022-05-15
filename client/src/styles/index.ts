@@ -30,6 +30,7 @@ export default createGlobalStyle`
       --c-2: #3865e0;
       --c-3: #F28E13;
       --c-4: #003580;
+      --c-5: rgb(61, 145, 255);
 
      /* Breakpoints */
       --mobile: 320px;
@@ -58,6 +59,10 @@ export default createGlobalStyle`
    a { 
       color: inherit; 
       text-decoration: none
+   }
+
+   button {
+      cursor: pointer;
    }
 
    body { 

@@ -4,18 +4,18 @@ type ButtonProps = {
   onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
   children?: React.ReactNode;
   color?: 'primary' | 'secondary' | 'bordered' | 'dark';
+  disabled?: boolean;
 };
 
-export const Button = ({ onClick, children, color }: ButtonProps) => {
+export const Button = ({ onClick, children, color, disabled }: ButtonProps) => {
   return (
-    <BtnContainer onClick={onClick} color={color}>
+    <BtnContainer onClick={onClick} color={color} disabled={disabled}>
       {children}
     </BtnContainer>
   );
 };
 
 export const BtnContainer = styled.button<ButtonProps>`
-  cursor: pointer;
   color: #fff;
   padding: 10px 25px;
   border: 1px solid var(--border-color);
@@ -33,6 +33,12 @@ export const BtnContainer = styled.button<ButtonProps>`
   }
 
   ${(props) => props.color && COLOR[props.color]};
+  ${(props) =>
+    props.disabled &&
+    css`
+      pointer-events: none;
+      opacity: 0.5;
+    `};
 `;
 
 const COLOR = {
@@ -43,6 +49,7 @@ const COLOR = {
       background-color: var(--c-3);
     }
   `,
+
   secondary: css`
     background-color: transparent;
     border-color: #fff;
@@ -52,6 +59,7 @@ const COLOR = {
       border-color: var(--c-accent);
     }
   `,
+
   bordered: css`
     background: transparent;
     border-color: #fff;
@@ -61,6 +69,7 @@ const COLOR = {
       border-color: var(--c-accent);
     }
   `,
+
   dark: css`
     background: var(--c-4);
     border-color: var(--c-4);
@@ -71,3 +80,30 @@ const COLOR = {
     }
   `,
 };
+
+export const CounterBtn = styled.button<ButtonProps>`
+  color: var(--c-5);
+  background: #fff;
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--c-5);
+  border-radius: 1px;
+  padding: 0;
+
+  &:hover {
+    color: var(--c-4);
+    border-color: var(--c-4);
+  }
+
+  ${(props) => props.color && COLOR[props.color]}
+  ${(props) =>
+    props.disabled &&
+    css`
+      opacity: 0.5;
+      cursor: not-allowed;
+      &:hover {
+        color: var(--c-5);
+        border-color: var(--c-5);
+      }
+    `};
+`;

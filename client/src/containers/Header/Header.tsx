@@ -21,7 +21,7 @@ const Header: React.FC<HeaderProps> = (props) => {
             </H>
           </Div>
           <Div>
-            <H level={3} style={{ marginTop: '1.2rem' }}>
+            <H level={4} style={{ marginTop: '1.2rem' }}>
               Get rewarded for your travels – unlock instant savings of 10% or
               more with a free Bon Booking account
             </H>
