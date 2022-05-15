@@ -71,7 +71,7 @@ export const Search = () => {
       </S.SearchItem>
 
       <S.SearchItem>
-        {options.adults <= 1 ? (
+        {options.children <= 0 && options.adults <= 1 ? (
           <FontAwesomeIcon icon={faPersonCircleCheck} />
         ) : (
           <FontAwesomeIcon icon={faPeopleRoof} />

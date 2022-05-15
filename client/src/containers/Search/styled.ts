@@ -1,20 +1,15 @@
 import styled from 'styled-components';
 import { BtnContainer } from '../../components/Button';
 import { DateRange } from 'react-date-range';
+import { Container } from '../../styles';
 
-export const SearchContainer = styled.div`
+export const SearchContainer = styled(Container)`
   background: white;
   border: 3px solid #fff;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   padding: 5px 20px;
-  border-radius: 5px;
-  width: 100%;
-  max-width: 1260px;
+  border-radius: var(--border-radius);
   z-index: 20;
   position: relative;
-  margin: 0 auto;
   margin-top: -40px;
   box-shadow: rgb(51 51 51 / 10%) 0px 8px 10px 0px;
 
