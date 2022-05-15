@@ -1,9 +1,9 @@
 import { List, ListItem } from './styled';
 import {
-  faBed,
   faCar,
-  faMattressPillow,
-  faPlane,
+  faHotel,
+  faMountainCity,
+  faPlaneDeparture,
   faTaxi,
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -12,11 +12,11 @@ export const ListMenu = () => {
   return (
     <List>
       <ListItem active>
-        <FontAwesomeIcon icon={faBed} />
+        <FontAwesomeIcon icon={faHotel} />
         <span>Stays</span>
       </ListItem>
       <ListItem>
-        <FontAwesomeIcon icon={faPlane} />
+        <FontAwesomeIcon icon={faPlaneDeparture} />
         <span>Flights</span>
       </ListItem>
       <ListItem>
@@ -24,7 +24,7 @@ export const ListMenu = () => {
         <span>Car Rentals</span>
       </ListItem>
       <ListItem>
-        <FontAwesomeIcon icon={faMattressPillow} />
+        <FontAwesomeIcon icon={faMountainCity} />
         <span>Attractions</span>
       </ListItem>
       <ListItem>

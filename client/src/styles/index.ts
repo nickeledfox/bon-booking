@@ -80,6 +80,7 @@ export const Container = styled.div`
   width: 100%;
   max-width: 1300px;
   padding: 0 20px;
+  margin: 0 auto;
 `;
 
 export const FlexWrapper = styled.div`

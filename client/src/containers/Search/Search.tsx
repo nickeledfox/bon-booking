@@ -43,17 +43,20 @@ export const Search = () => {
     <S.SearchContainer>
       <S.SearchItem>
         <FontAwesomeIcon icon={faPersonWalkingLuggage} />
-        <Input type='text' placeholder='Where are you going?' />
+        <Input type='text' placeholder='Where are you going to?' />
       </S.SearchItem>
 
       <S.SearchItem>
         <FontAwesomeIcon icon={faCalendarDays} />
-        <S.SearchText onClick={() => setOpenDate(!openDate)}>
-          {`${format(date[0].startDate, 'MM/dd/yyyy')} to ${format(
-            date[0].endDate,
-            'MM/dd/yyyy'
-          )}`}
-        </S.SearchText>
+        <span onClick={() => setOpenDate(!openDate)}>
+          <S.SearchText>
+            {`Departing ${format(date[0].startDate, 'MM/dd/yyyy')} `}
+          </S.SearchText>
+          <S.SearchText>
+            {`Returning ${format(date[0].endDate, 'MM/dd/yyyy')}`}
+          </S.SearchText>
+        </span>
+
         {openDate && (
           <S.StyledDateRange
             editableDateInputs={true}

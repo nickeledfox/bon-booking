@@ -25,7 +25,7 @@ export const Div = styled.div`
 export const Btn = styled(BtnContainer)`
   &&& {
     padding: 20px 50px;
-    margin-bottom: 120px;
+    margin-bottom: 110px;
     font-size: 1.8rem;
   }
 `;

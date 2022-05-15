@@ -8,15 +8,19 @@ export const SearchContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 20px;
+  padding: 5px 20px;
   border-radius: 5px;
   width: 100%;
   max-width: 1260px;
   z-index: 20;
   position: relative;
   margin: 0 auto;
-  margin-top: -45px;
+  margin-top: -40px;
   box-shadow: rgb(51 51 51 / 10%) 0px 8px 10px 0px;
+
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 28% 32% 22% 15%;
 `;
 
 export const SearchItem = styled.div`
