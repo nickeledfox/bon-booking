@@ -6,24 +6,14 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import {
-  SearchBtn,
-  SearchContainer,
-  SearchItem,
-  SearchText,
-  StyledDateRange,
-  Options,
-  OptionItem,
-  OptionCounter,
-} from './styled';
+import * as S from './styled';
 import { Input } from '../../components/Input';
+import { CounterBtn } from '../../components/Button';
 
 import { format } from 'date-fns';
 import { useState } from 'react';
 
-import { CounterBtn } from '../../components/Button';
-
-const Search = () => {
+export const Search = () => {
   const [openDate, setOpenDate] = useState(false);
   const [date, setDate] = useState([
     {
@@ -50,22 +40,22 @@ const Search = () => {
   };
 
   return (
-    <SearchContainer>
-      <SearchItem>
+    <S.SearchContainer>
+      <S.SearchItem>
         <FontAwesomeIcon icon={faPersonWalkingLuggage} />
         <Input type='text' placeholder='Where are you going?' />
-      </SearchItem>
+      </S.SearchItem>
 
-      <SearchItem>
+      <S.SearchItem>
         <FontAwesomeIcon icon={faCalendarDays} />
-        <SearchText onClick={() => setOpenDate(!openDate)}>
+        <S.SearchText onClick={() => setOpenDate(!openDate)}>
           {`${format(date[0].startDate, 'MM/dd/yyyy')} to ${format(
             date[0].endDate,
             'MM/dd/yyyy'
           )}`}
-        </SearchText>
+        </S.SearchText>
         {openDate && (
-          <StyledDateRange
+          <S.StyledDateRange
             editableDateInputs={true}
             onChange={(item: {
               selection: { startDate: Date; endDate: Date; key: string };
@@ -75,23 +65,23 @@ const Search = () => {
             minDate={new Date()}
           />
         )}
-      </SearchItem>
+      </S.SearchItem>
 
-      <SearchItem>
+      <S.SearchItem>
         {options.adults <= 1 ? (
           <FontAwesomeIcon icon={faPersonCircleCheck} />
         ) : (
           <FontAwesomeIcon icon={faPeopleRoof} />
         )}
-        <SearchText
+        <S.SearchText
           onClick={() => setOpenOptions(!openOptions)}
-        >{`${options.adults} adults - ${options.children} children - ${options.rooms} rooms`}</SearchText>
+        >{`${options.adults} adults - ${options.children} children - ${options.rooms} rooms`}</S.SearchText>
 
         {openOptions && (
-          <Options>
-            <OptionItem>
+          <S.Options>
+            <S.OptionItem>
               <span>Adults</span>
-              <OptionCounter>
+              <S.OptionCounter>
                 <CounterBtn
                   onClick={() => handleOption('adults', 'd')}
                   disabled={options.adults <= 1}
@@ -102,12 +92,12 @@ const Search = () => {
                 <CounterBtn onClick={() => handleOption('adults', 'i')}>
                   +
                 </CounterBtn>
-              </OptionCounter>
-            </OptionItem>
+              </S.OptionCounter>
+            </S.OptionItem>
 
-            <OptionItem>
+            <S.OptionItem>
               <span>Children</span>
-              <OptionCounter>
+              <S.OptionCounter>
                 <CounterBtn
                   onClick={() => handleOption('children', 'd')}
                   disabled={options.children <= 0}
@@ -118,12 +108,12 @@ const Search = () => {
                 <CounterBtn onClick={() => handleOption('children', 'i')}>
                   +
                 </CounterBtn>
-              </OptionCounter>
-            </OptionItem>
+              </S.OptionCounter>
+            </S.OptionItem>
 
-            <OptionItem>
+            <S.OptionItem>
               <span>Rooms</span>
-              <OptionCounter>
+              <S.OptionCounter>
                 <CounterBtn
                   onClick={() => handleOption('rooms', 'd')}
                   disabled={options.rooms <= 1}
@@ -134,16 +124,15 @@ const Search = () => {
                 <CounterBtn onClick={() => handleOption('rooms', 'i')}>
                   +
                 </CounterBtn>
-              </OptionCounter>
-            </OptionItem>
-          </Options>
+              </S.OptionCounter>
+            </S.OptionItem>
+          </S.Options>
         )}
-      </SearchItem>
+      </S.SearchItem>
 
-      <SearchItem>
-        <SearchBtn color='dark'>Search</SearchBtn>
-      </SearchItem>
-    </SearchContainer>
+      <S.SearchItem>
+        <S.SearchBtn color='dark'>Search</S.SearchBtn>
+      </S.SearchItem>
+    </S.SearchContainer>
   );
 };
-export default Search;
