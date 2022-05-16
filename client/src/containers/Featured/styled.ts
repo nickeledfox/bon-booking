@@ -7,12 +7,13 @@ export const FContainer = styled(Container)`
   gap: 20px;
   z-index: 1;
   margin: 0;
+  padding: 0;
 `;
 
 export const Item = styled.div`
   position: relative;
   color: white;
-  border-radius: 10px;
+  border-radius: 10px !important;
   overflow: hidden;
   height: 250px;
   flex: 1;

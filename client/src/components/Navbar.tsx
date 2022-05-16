@@ -1,11 +1,11 @@
 import styled from 'styled-components';
-import Logo from './Logo';
+import { Logo } from './Logo';
 import { BtnContainer } from './Button';
 import { Container } from '../styles';
 
 import ListMenu from '../containers/List';
 
-const Navbar: React.FC = () => {
+export const Navbar: React.FC = () => {
   return (
     <Nav>
       <NavContainer>
@@ -22,14 +22,12 @@ const Navbar: React.FC = () => {
   );
 };
 
-export default Navbar;
-
 const Nav = styled.nav`
   background-color: var(--c-4);
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 10px;
+  padding-top: 15px;
   color: #fff;
 `;
 

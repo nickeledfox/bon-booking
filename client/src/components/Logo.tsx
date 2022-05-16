@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { ReactComponent as LogoSvg } from '../assets/logo.svg';
 import { FlexWrapper } from '../styles';
 
-const Logo = () => {
+export const Logo = () => {
   return (
     <Link to='/'>
       <FlexWrapper>
@@ -19,5 +19,3 @@ const LogoText = styled.span`
   font-size: 30px;
   padding: 0 10px;
 `;
-
-export default Logo;
