@@ -1,0 +1,34 @@
+{
+  "property": [
+    {
+      "id": 1,
+      "imageUrl": "https://media.millenniumhotels.com/Live/8/6/C/86C5284F-6CB6-4DC6-A3D4-3F25FAF617A1/Hero%20-%20Millennium%20Minneapolis.jpg?r=190808030919",
+      "title": "Hotels",
+      "subtitle": "2331 hotels"
+    },
+    {
+      "id": 2,
+      "imageUrl": "https://thumbs.cityrealty.com/assets/smart/736x/webp/1/16/1655f4e3904fb79cb987ab7755d2b3f4b8f37f88/1-city-point.jpg",
+      "title": "Apartments",
+      "subtitle": "2331 hotels"
+    },
+    {
+      "id": 3,
+      "imageUrl": "https://digital.ihg.com/is/image/ihg/intercontinental-phu-quoc-5630347934-2x1",
+      "title": "Resorts ",
+      "subtitle": "2331 hotels"
+    },
+    {
+      "id": 4,
+      "imageUrl": "https://st.hzcdn.com/simgs/pictures/house-exteriors/italian-villas-tuscany-umbria-lazzaretto-and-sardinia-henry-woide-img~3dd151eb05a76862_4-4376-1-e90565e.jpg",
+      "title": "Villas",
+      "subtitle": "2331 hotels"
+    },
+    {
+      "id": 5,
+      "imageUrl": "https://media.cntraveler.com/photos/5f11aa59f644feb870fcc946/master/pass/38849710-2-airbnb-log.jpg",
+      "title": "Cabins",
+      "subtitle": "2331 hotels"
+    }
+  ]
+}
