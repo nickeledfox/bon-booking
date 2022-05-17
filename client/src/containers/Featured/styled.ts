@@ -8,12 +8,13 @@ export const FContainer = styled(Container)`
   z-index: 1;
   margin: 0;
   padding: 0;
+  overflow: hidden;
 `;
 
 export const Item = styled.div`
   position: relative;
   color: white;
-  border-radius: 10px !important;
+  border-radius: var(--border-radius2);
   overflow: hidden;
   height: 250px;
   flex: 1;
@@ -21,14 +22,15 @@ export const Item = styled.div`
     0 0 0.2em rgba(93, 93, 95, 0.603);
 `;
 
-export const Img = styled.img`
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-`;
-
 export const Titles = styled.div`
   position: absolute;
   bottom: 20px;
   left: 20px;
+
+  > h3 {
+    margin-bottom: 0;
+  }
+  > h4 {
+    margin-top: 0;
+  }
 `;

@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 import { H } from './Heading';
-import Property from '../data/property-data.json';
+import PropertyType from '../data/property-categories.json';
 
-export const Properties = () => {
+export const Categories = () => {
   return (
     <Container as='section'>
-      {Property.property.map(
+      {PropertyType.property.map(
         (item: {
           title: string;
           subtitle: string;
@@ -35,10 +35,8 @@ const Container = styled.div`
 const Item = styled.div`
   cursor: pointer;
   flex: 1;
-  border-radius: var(--border-radius);
+  border-radius: var(--border-radius2);
   overflow: hidden;
-  background: #fff;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 `;
 
 const Img = styled.img`
@@ -48,15 +46,16 @@ const Img = styled.img`
 `;
 
 const Titles = styled.div`
-  padding: 0 10px;
-  margin-top: -10px;
+  margin-top: -20px;
   > h4 {
     font-size: 18px;
     color: var(--c-main);
+    margin-bottom: 0;
   }
 
   > h5 {
     font-size: 14px;
     font-weight: 300;
+    margin-top: 0.5rem;
   }
 `;

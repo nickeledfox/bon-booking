@@ -45,6 +45,7 @@ export default createGlobalStyle`
 
    /* Borders */
      --border-radius: 5px;
+     --border-radius2: 10px;
      --border-color: transparent;
    }
 
@@ -91,4 +92,10 @@ export const FlexWrapper = styled.div`
 export const BaseTitle = styled.span`
   font-weight: 700;
   line-height: 1.5;
+`;
+
+export const Img = styled.img`
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 `;

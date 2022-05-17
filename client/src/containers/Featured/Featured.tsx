@@ -1,4 +1,5 @@
-import { FContainer, Item, Img, Titles } from './styled';
+import { FContainer, Item, Titles } from './styled';
+import { Img } from '../../styles';
 import { H } from '../../components/Heading';
 
 export const Featured = () => {
