@@ -16,6 +16,8 @@ export const Button = ({ onClick, children, color, disabled }: ButtonProps) => {
 };
 
 export const BtnContainer = styled.button<ButtonProps>`
+  position: relative;
+  z-index: 10;
   color: #fff;
   padding: 10px 25px;
   border: 1px solid var(--border-color);

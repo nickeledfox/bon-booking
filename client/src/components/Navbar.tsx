@@ -2,8 +2,7 @@ import styled from 'styled-components';
 import { Logo } from './Logo';
 import { BtnContainer } from './Button';
 import { Container } from '../styles';
-
-import ListMenu from '../containers/List';
+import NavMenu from '../containers/NavList';
 
 export const Navbar: React.FC = () => {
   return (
@@ -16,18 +15,22 @@ export const Navbar: React.FC = () => {
         </div>
       </NavContainer>
       <ListContainer>
-        <ListMenu />
+        <NavMenu />
       </ListContainer>
     </Nav>
   );
 };
 
 const Nav = styled.nav`
-  background-color: var(--c-4);
+  background: linear-gradient(
+    180deg,
+    rgba(20, 20, 20, 0.5) 0%,
+    rgba(20, 20, 20, 0) 100%
+  );
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 15px;
+  padding: 15px 0;
   color: #fff;
 `;
 

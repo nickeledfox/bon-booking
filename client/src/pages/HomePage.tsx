@@ -4,7 +4,8 @@ import { H } from '../components/Heading';
 import Header from '../containers/Header';
 import Featured from '../containers/Featured';
 import { Categories } from '../components/Categories';
-import Chosen from '../containers/Properties';
+import Properties from '../containers/Properties';
+import Subscription from '../containers/Subscription';
 
 const HomePage = () => {
   return (
@@ -19,11 +20,10 @@ const HomePage = () => {
         <Featured />
         <SectionH level={4}>Browse by property type</SectionH>
         <Categories />
-        <SectionH level={4}>Homes guests love</SectionH>
-        <Chosen />
-        {/* <MailList/> */}
-        {/* <Footer/> */}
+        <SectionH level={4}>Traveler's Best Choices</SectionH>
+        <Properties />
       </HomeContainer>
+      <Subscription />
     </>
   );
 };
@@ -31,12 +31,12 @@ const HomePage = () => {
 export default HomePage;
 
 const HomeContainer = styled(Container)`
-  margin-top: 60px;
+  margin-top: 10rem;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 50px;
 `;
 
 const SectionH = styled(H)`
-  margin: 1rem 0 0 0;
+  margin: 5rem 0 -30px 0;
 `;

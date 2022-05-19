@@ -34,7 +34,7 @@ export const H = styled(Heading)(({ level }: HProps) => [
     `
   font-size: 64px;
   line-height: 60px;
-  margin-bottom: 0;
+  margin: 0;
   `,
   ],
 
