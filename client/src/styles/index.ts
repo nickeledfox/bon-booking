@@ -45,7 +45,7 @@ export default createGlobalStyle`
 
    /* Borders */
      --border-radius: 5px;
-     --border-radius2: 10px;
+     --border-radius2: 12px;
      --border-color: transparent;
    }
 

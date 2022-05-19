@@ -1,0 +1,139 @@
+[
+  {
+    "id": "1",
+    "links": [
+      {
+        "name": "Countries",
+        "path": "/"
+      },
+      {
+        "name": "Regions",
+        "path": "/"
+      },
+      {
+        "name": "Cities",
+        "path": "/"
+      },
+      {
+        "name": "Districts",
+        "path": "/"
+      },
+      {
+        "name": "Airports",
+        "path": "/"
+      },
+      {
+        "name": "Hotels",
+        "path": "/"
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "links": [
+      {
+        "name": "Homes",
+        "path": "/"
+      },
+      {
+        "name": "Apartments",
+        "path": "/"
+      },
+      {
+        "name": "Resorts",
+        "path": "/"
+      },
+      {
+        "name": "Villas",
+        "path": "/"
+      },
+      {
+        "name": "Hostels",
+        "path": "/"
+      },
+      {
+        "name": "Guest houses",
+        "path": "/"
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "links": [
+      {
+        "name": "Unique places to stay",
+        "path": "/"
+      },
+      {
+        "name": "Reviews",
+        "path": "/"
+      },
+      {
+        "name": "Unpacked: Travel articles",
+        "path": "/"
+      },
+      {
+        "name": "Travel communities",
+        "path": "/"
+      },
+      {
+        "name": "Seasonal and holiday deals",
+        "path": "/"
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "links": [
+      {
+        "name": "Car rental",
+        "path": "/"
+      },
+      {
+        "name": "Flight Finder",
+        "path": "/"
+      },
+      {
+        "name": "Restaurant reservations",
+        "path": "/"
+      },
+      {
+        "name": "Travel Agents",
+        "path": "/"
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "links": [
+      {
+        "name": "Curtomer Service",
+        "path": "/"
+      },
+      {
+        "name": "Careers",
+        "path": "/"
+      },
+      {
+        "name": "Sustainability",
+        "path": "/"
+      },
+      {
+        "name": "Press center",
+        "path": "/"
+      },
+      {
+        "name": "Safety Resource Center",
+        "path": "/"
+      },
+      {
+        "name": "Investor relations",
+        "path": "/"
+      },
+      {
+        "name": "Terms & conditions",
+        "path": "/"
+      }
+    ]
+  }
+]
