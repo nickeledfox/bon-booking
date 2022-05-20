@@ -29,7 +29,7 @@ export const NavMenu = () => {
       </ListItem>
       <ListItem>
         <FontAwesomeIcon icon={faTaxi} />
-        <span>Airport taxis</span>
+        <span>Airport Taxis</span>
       </ListItem>
     </List>
   );

@@ -24,6 +24,11 @@ export const MainHeader = styled.header`
 
 export const HContainer = styled(Container)`
   margin: 20px 0px 100px 0px;
+
+  > h5 {
+    font-weight: 500;
+    text-transform: uppercase;
+  }
 `;
 
 export const HContainerListMode = styled.ul`
@@ -32,8 +37,12 @@ export const HContainerListMode = styled.ul`
 
 export const Div = styled.div`
   width: 60%;
-  text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1),
-    1px 1px 1px rgba(0, 0, 0, 0.5);
+
+  > h1,
+  h4 {
+    text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1),
+      1px 1px 1px rgba(0, 0, 0, 0.5);
+  }
 `;
 
 export const Btn = styled(BtnContainer)`

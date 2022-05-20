@@ -136,7 +136,7 @@ export const Search = () => {
             )}
           </S.SearchItem>
         </S.SearchBar>
-        <S.SearchBtn color='dark'>Search</S.SearchBtn>
+        <S.SearchBtn color='muted'>Search</S.SearchBtn>
       </S.SearchContainer>
     </>
   );

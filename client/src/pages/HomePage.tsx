@@ -12,12 +12,10 @@ const HomePage = () => {
     <>
       <Header />
       <HomeContainer>
-        <SectionH>
+        {/* <SectionH>
           Start Packing! These Cities are
           <span className='accent'> Open for Travel</span>
-        </SectionH>
-
-        <Featured />
+        </SectionH> */}
         <SectionH level={4}>Browse by property type</SectionH>
         <Categories />
         <SectionH level={4}>Traveler's Best Choices</SectionH>
