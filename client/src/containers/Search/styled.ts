@@ -24,6 +24,7 @@ export const SearchContainer = styled(Container)`
 export const SearchBar = styled.div`
   background: #fff;
   border: 3px solid #fff;
+  font-size: 14px;
   padding: 0;
   border-radius: var(--border-radius);
   position: relative;
@@ -43,10 +44,6 @@ export const SearchItem = styled.div`
   color: #3e4958;
   padding: 1.2rem;
   transition: color ease var(--animation-duration);
-
-  &:hover {
-    color: var(--c-5);
-  }
 `;
 
 export const SearchText = styled.span`
@@ -57,6 +54,7 @@ export const SearchBtn = styled(BtnContainer)`
   padding-left: 62px;
   padding-right: 62px;
   margin-left: 20px;
+  box-shadow: none;
 `;
 
 export const StyledDateRange = styled(DateRange)`

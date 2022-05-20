@@ -1,6 +1,7 @@
 import { FContainer, Item, Titles } from './styled';
 import { Img } from '../../styles';
-import { H } from '../../components/Heading';
+import { faHouseCircleCheck } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export const Featured = () => {
   const categories = [
@@ -9,7 +10,7 @@ export const Featured = () => {
       title: 'Dublin',
       subtitle: '123 properties',
       imageUrl:
-        'https://media.cntraveller.com/photos/611bf0fb7048754865719e3a/16:9/w_2580,c_limit/view-of-the-liffey-from-liberty-hall-dublin-ireland-conde-nast-traveller-4feb16-Tara-Morgan.jpg',
+        'https://www.delightfull.eu/blog/wp-content/uploads/2016/03/Luxury-hotel-designs-in-Dublin-and-a-few-view-about-the-city-Dublin-768x349.jpg',
     },
     {
       id: 2,
@@ -36,8 +37,9 @@ export const Featured = () => {
             className='featuredImg'
           />
           <Titles>
-            <H>{category.title}</H>
-            <H level={4}>{category.subtitle}</H>
+            <p>{category.title}</p>
+            <FontAwesomeIcon icon={faHouseCircleCheck} />
+            <span>{category.subtitle}</span>
           </Titles>
         </Item>
       ))}

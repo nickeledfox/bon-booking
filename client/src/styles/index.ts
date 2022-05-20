@@ -3,8 +3,8 @@ import styled, { createGlobalStyle } from 'styled-components';
 export default createGlobalStyle`
    :root{
       /* Fonts */
-      --ff-primary: 'Roboto', sans-serif; 
-      --ff-secondary: 'Inter', sans-serif;
+      --ff-primary: 'Montserrat', sans-serif; 
+      --ff-secondary: 'Poppins', sans-serif;
       --ff-accent: 'Rochester', cursive;
 
       /* Fonts: Line Height */
@@ -12,8 +12,7 @@ export default createGlobalStyle`
       --f-line-height-heading: 1.5;
 
       /* Fonts: Weight */
-      --fw-body: 300;
-      --fw-heading: 500;
+      --fw-body: 400;
 
       /* Fonts: Colors */
       --c-font: #000;
@@ -44,8 +43,8 @@ export default createGlobalStyle`
      --animation-timing: ease;
 
    /* Borders */
-     --border-radius: 5px;
-     --border-radius2: 12px;
+     --border-radius: 12px;
+     --border-radius2: 16px;
      --border-color: transparent;
    }
 
@@ -72,7 +71,7 @@ export default createGlobalStyle`
      font-weight: var(--fw-body);
      line-height: var(--f-line-height-body);
      font-size: 1.6rem;
-     letter-spacing: 0.03em;
+     letter-spacing: 0.015em;
      overflow-x: hidden;
    }
 `;

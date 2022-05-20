@@ -22,6 +22,7 @@ export const Navbar: React.FC = () => {
 };
 
 const Nav = styled.nav`
+  font-family: 'Raleway';
   background: linear-gradient(
     180deg,
     rgba(20, 20, 20, 0.5) 0%,
@@ -45,7 +46,6 @@ const ListContainer = styled(Container)`
 `;
 
 const NavButton = styled(BtnContainer)`
-  &&& {
-    margin-left: 20px;
-  }
+  margin-left: 20px;
+  border-radius: 5px;
 `;

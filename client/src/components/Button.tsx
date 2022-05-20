@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components';
 type ButtonProps = {
   onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
   children?: React.ReactNode;
-  color?: 'primary' | 'secondary' | 'bordered' | 'dark';
+  color?: 'primary' | 'secondary' | 'bordered' | 'muted';
   disabled?: boolean;
 };
 
@@ -72,13 +72,13 @@ const COLOR = {
     }
   `,
 
-  dark: css`
-    background: var(--c-4);
-    border-color: var(--c-4);
+  muted: css`
+    background: #e7ac72;
+    border-color: #e7ac72;
 
     &:hover {
-      background: #01429c;
-      border-color: #01429c;
+      background: #e7a15b;
+      border-color: #e7a15b;
     }
   `,
 };

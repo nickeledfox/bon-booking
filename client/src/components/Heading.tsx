@@ -32,8 +32,8 @@ export const H = styled(Heading)(({ level }: HProps) => [
 
   level === 1 && [
     `
-  font-size: 64px;
-  line-height: 60px;
+  font-size: 47px;
+  line-height: 57px;
   margin: 0;
   `,
   ],
@@ -62,6 +62,7 @@ export const H = styled(Heading)(({ level }: HProps) => [
   level === 5 && [
     `
   font-size: 16px;
+  line-height: 20px;
   `,
   ],
 ]);
