@@ -28,21 +28,23 @@ export const Featured = () => {
     },
   ];
   return (
-    <FContainer as='section'>
-      {categories.map((category) => (
-        <Item key={category.id}>
-          <Img
-            src={category.imageUrl}
-            alt={category.title}
-            className='featuredImg'
-          />
-          <Titles>
-            <p>{category.title}</p>
-            <FontAwesomeIcon icon={faHouseCircleCheck} />
-            <span>{category.subtitle}</span>
-          </Titles>
-        </Item>
-      ))}
-    </FContainer>
+    <>
+      <FContainer as='section'>
+        {categories.map((category) => (
+          <Item key={category.id}>
+            <Img
+              src={category.imageUrl}
+              alt={category.title}
+              className='featuredImg'
+            />
+            <Titles>
+              <p>{category.title}</p>
+              <FontAwesomeIcon icon={faHouseCircleCheck} />
+              <span>{category.subtitle}</span>
+            </Titles>
+          </Item>
+        ))}
+      </FContainer>
+    </>
   );
 };

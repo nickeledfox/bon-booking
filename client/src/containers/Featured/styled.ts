@@ -3,15 +3,16 @@ import { Container } from '../../styles';
 
 export const FContainer = styled(Container)`
   display: flex;
-  gap: 30px;
   z-index: 1;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  padding-top: 30px;
+  padding-top: 10px;
+  justify-content: space-between;
 `;
 
 export const Item = styled.div`
+  cursor: pointer;
   width: 180px;
   height: 250px;
   padding: 10px;
@@ -33,13 +34,20 @@ export const Item = styled.div`
     height: 80%;
     border-radius: 10px;
   }
+  /* 
+  &:hover {
+    background: rgba(255, 255, 255, 0.4);
+
+    > img {
+      transform: translateY(-20px);
+    }
+  } */
 `;
 
 export const Titles = styled.div`
   color: #023f76;
-  font-weight: 500;
   letter-spacing: 0.015em;
-  font: var(--ff-secondary);
+  font-family: var(--ff-secondary);
 
   > p {
     margin: 0;

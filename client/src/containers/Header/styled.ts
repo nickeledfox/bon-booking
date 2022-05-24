@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import { Container } from '../../styles';
+import { BaseTitle, Container } from '../../styles';
 import { BtnContainer } from '../../components/Button';
 
 export const MainHeader = styled.header`
@@ -36,7 +36,7 @@ export const HContainerListMode = styled.ul`
 `;
 
 export const Div = styled.div`
-  width: 60%;
+  width: 52%;
 
   > h1,
   h4 {
@@ -51,4 +51,21 @@ export const Btn = styled(BtnContainer)`
     margin-bottom: 100px;
     font-size: 1.8rem;
   }
+`;
+
+//
+export const Slider = styled.div`
+  padding-top: 3.5rem;
+`;
+
+export const SliderHeader = styled.div`
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+`;
+
+export const Heading = styled(BaseTitle)`
+  font-size: 24px;
+  text-transform: uppercase;
+  font-family: var(--ff-secondary);
 `;

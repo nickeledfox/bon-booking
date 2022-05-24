@@ -19,7 +19,7 @@ export const ListItem = styled.li<{ active?: boolean }>`
     0px -5px 35px rgba(255, 255, 255, 0.3);
 
   &:hover {
-    background-color: rgba(255, 255, 255, 0.15);
+    background-color: var(--c-ghost);
     backdrop-filter: blur(5px);
     padding: 10px 13px;
     border-radius: 30px;
@@ -31,7 +31,7 @@ export const ListItem = styled.li<{ active?: boolean }>`
           border: 1.5px solid #fff;
           padding: 10px 13px;
           border-radius: 30px;
-          background-color: rgba(255, 255, 255, 0.15);
+          background-color: var(--c-ghost);
           backdrop-filter: blur(5px);
         `
       : 'none'}

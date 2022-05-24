@@ -2,7 +2,6 @@ import styled from 'styled-components';
 import { Container } from '../styles';
 import { H } from '../components/Heading';
 import Header from '../containers/Header';
-import Featured from '../containers/Featured';
 import { Categories } from '../components/Categories';
 import Properties from '../containers/Properties';
 import Subscription from '../containers/Subscription';
