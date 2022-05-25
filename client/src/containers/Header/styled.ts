@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import { Container } from '../../styles';
+import { BaseTitle, Container } from '../../styles';
 import { BtnContainer } from '../../components/Button';
 
 export const MainHeader = styled.header`
@@ -36,7 +36,7 @@ export const HContainerListMode = styled.ul`
 `;
 
 export const Div = styled.div`
-  width: 60%;
+  width: 65%; // responsible for the heder slider width and spacing between slides
 
   > h1,
   h4 {
@@ -51,4 +51,16 @@ export const Btn = styled(BtnContainer)`
     margin-bottom: 100px;
     font-size: 1.8rem;
   }
+`;
+
+//
+export const Slider = styled.div`
+  padding-top: 2.5rem;
+`;
+
+export const Heading = styled(BaseTitle)`
+  padding-bottom: 1rem;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-family: var(--ff-secondary);
 `;

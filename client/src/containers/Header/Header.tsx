@@ -1,12 +1,12 @@
 import { Container } from '../../styles';
 import { H } from '../../components/Heading';
-import { MainHeader, Div } from './styled';
+import { MainHeader, Div, Slider, Heading } from './styled';
 
 import Search from '../Search';
 import Featured from '../Featured';
 
 interface HeaderProps {
-  active?: any;
+  active?: boolean;
 }
 
 export const Header: React.FC<HeaderProps> = (props) => {
@@ -22,13 +22,10 @@ export const Header: React.FC<HeaderProps> = (props) => {
               The most comfortable accomodation you can find in our website,
               spread all over the world!
             </H>
-            <div>
-              <span>Most Popular </span>
-              <span>Arrow </span>
-              <div>
-                <Featured />
-              </div>
-            </div>
+            <Slider>
+              <Heading as='div'>Popular destinations</Heading>
+              <Featured />
+            </Slider>
           </Div>
         </Container>
       </MainHeader>

@@ -4,7 +4,7 @@ import { DateRange } from 'react-date-range';
 import { Container } from '../../styles';
 
 export const SearchContainer = styled(Container)`
-  margin-top: 36px;
+  margin-top: 40px;
   display: flex;
   justify-content: center;
   background: red;

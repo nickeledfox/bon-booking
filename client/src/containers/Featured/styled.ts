@@ -1,26 +1,17 @@
 import styled from 'styled-components';
-import { Container } from '../../styles';
-
-export const FContainer = styled(Container)`
-  display: flex;
-  gap: 30px;
-  z-index: 1;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  padding-top: 30px;
-`;
 
 export const Item = styled.div`
-  width: 180px;
-  height: 250px;
+  cursor: pointer;
+  width: 215px;
+  height: 270px;
   padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   border-radius: 12px;
   background: rgba(255, 255, 255, 0.8);
-  border: 2px solid #fff;
+  border: var(--border);
+  transition: all 0.5s;
   box-shadow: 64.0184px 76.8221px 80px rgba(0, 0, 0, 0.07),
     41.4934px 49.7921px 46.8519px rgba(0, 0, 0, 0.0531481),
     24.659px 29.5907px 25.4815px rgba(0, 0, 0, 0.0425185),
@@ -33,13 +24,20 @@ export const Item = styled.div`
     height: 80%;
     border-radius: 10px;
   }
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.4);
+
+    > img {
+      transform: scale(1.1);
+    }
+  }
 `;
 
 export const Titles = styled.div`
   color: #023f76;
-  font-weight: 500;
   letter-spacing: 0.015em;
-  font: var(--ff-secondary);
+  font-family: var(--ff-secondary);
 
   > p {
     margin: 0;

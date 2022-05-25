@@ -24,6 +24,7 @@ export default createGlobalStyle`
      /* Colors */
       --c-accent: #F47920;
       --c-main: #0083CA;
+      --c-ghost: rgba(255, 255, 255, 0.15);
 
       --c-1: #3B5E8C;
       --c-2: #3865e0;
@@ -43,6 +44,7 @@ export default createGlobalStyle`
      --animation-timing: ease;
 
    /* Borders */
+     --border: 2px solid #fff;
      --border-radius: 12px;
      --border-radius2: 16px;
      --border-color: transparent;
