@@ -36,7 +36,7 @@ export const HContainerListMode = styled.ul`
 `;
 
 export const Div = styled.div`
-  width: 52%;
+  width: 65%; // responsible for the heder slider width and spacing between slides
 
   > h1,
   h4 {
@@ -55,16 +55,11 @@ export const Btn = styled(BtnContainer)`
 
 //
 export const Slider = styled.div`
-  padding-top: 3.5rem;
-`;
-
-export const SliderHeader = styled.div`
-  display: flex;
-  align-items: stretch;
-  justify-content: space-between;
+  padding-top: 2.5rem;
 `;
 
 export const Heading = styled(BaseTitle)`
+  padding-bottom: 1rem;
   font-size: 24px;
   text-transform: uppercase;
   font-family: var(--ff-secondary);

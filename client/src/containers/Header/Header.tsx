@@ -1,10 +1,9 @@
 import { Container } from '../../styles';
 import { H } from '../../components/Heading';
-import { MainHeader, Div, Slider, SliderHeader, Heading } from './styled';
+import { MainHeader, Div, Slider, Heading } from './styled';
 
 import Search from '../Search';
 import Featured from '../Featured';
-import { ArrowRight } from '../../components/ArrowRight';
 
 interface HeaderProps {
   active?: boolean;
@@ -24,10 +23,7 @@ export const Header: React.FC<HeaderProps> = (props) => {
               spread all over the world!
             </H>
             <Slider>
-              <SliderHeader>
-                <Heading>Most Popular</Heading>
-                <ArrowRight />
-              </SliderHeader>
+              <Heading as='div'>Popular destinations</Heading>
               <Featured />
             </Slider>
           </Div>

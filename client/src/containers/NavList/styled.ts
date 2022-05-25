@@ -28,7 +28,7 @@ export const ListItem = styled.li<{ active?: boolean }>`
   ${(props) =>
     props.active
       ? css`
-          border: 1.5px solid #fff;
+          border: var(--border);
           padding: 10px 13px;
           border-radius: 30px;
           background-color: var(--c-ghost);

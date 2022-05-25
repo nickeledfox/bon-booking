@@ -44,6 +44,7 @@ export default createGlobalStyle`
      --animation-timing: ease;
 
    /* Borders */
+     --border: 2px solid #fff;
      --border-radius: 12px;
      --border-radius2: 16px;
      --border-color: transparent;
