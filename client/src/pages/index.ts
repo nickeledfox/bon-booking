@@ -1,4 +1,4 @@
-export { default as HomePage } from './HomePage';
-export { default as HotelsPage } from './HotelsPage';
-export { default as HotelPage } from './HotelPage';
-export { default as PageNotFound } from './404';
+export { HomePage } from './HomePage';
+export { PropertiesPage } from './PropertiesPage';
+export { DetailsPage } from './DetailsPage';
+export { PageNotFound } from './404';

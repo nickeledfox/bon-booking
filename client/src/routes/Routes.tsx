@@ -1,14 +1,14 @@
 import { Routes, Route } from 'react-router-dom';
 
-import { HomePage, HotelsPage, HotelPage, PageNotFound } from '../pages';
+import { HomePage, PropertiesPage, DetailsPage, PageNotFound } from '../pages';
 
 const RoutesList = () => {
   return (
     <>
       <Routes>
         <Route path='/' element={<HomePage />} />
-        <Route path='/hotels' element={<HotelsPage />} />
-        <Route path='/hotels/:id' element={<HotelPage />} />
+        <Route path='/searchresults' element={<PropertiesPage />} />
+        <Route path='/searchresults/:id' element={<DetailsPage />} />
         <Route path='*' element={<PageNotFound />} />
       </Routes>
     </>

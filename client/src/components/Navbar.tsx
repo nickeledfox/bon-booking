@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { Logo } from './Logo';
 import { BtnContainer } from './Button';
 import { Container } from '../styles';
-import NavMenu from '../containers/NavList';
+import { NavList } from './NavList';
 
 export const Navbar: React.FC = () => {
   return (
@@ -15,7 +15,7 @@ export const Navbar: React.FC = () => {
         </div>
       </NavContainer>
       <ListContainer>
-        <NavMenu />
+        <NavList />
       </ListContainer>
     </Nav>
   );
@@ -25,7 +25,7 @@ const Nav = styled.nav`
   font-family: 'Raleway';
   background: linear-gradient(
     180deg,
-    rgba(20, 20, 20, 0.5) 0%,
+    rgba(20, 20, 20, 1) 0%,
     rgba(20, 20, 20, 0) 100%
   );
   display: flex;

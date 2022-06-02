@@ -63,7 +63,6 @@ export const Featured = () => {
       responsive={responsive}
       infinite={false}
       keyBoardControl
-      // autoPlay
       autoPlaySpeed={4000}
       draggable
       focusOnSelect={false}
