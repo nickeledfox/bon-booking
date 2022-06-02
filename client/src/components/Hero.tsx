@@ -3,8 +3,7 @@ import { BaseTitle, Container } from '../styles';
 import { BtnContainer } from './Button';
 import { H } from './Heading';
 
-import Search from '../containers/Search';
-import Featured from '../containers/Featured';
+import { Search, Featured } from '../containers';
 
 interface HeaderProps {
   active?: boolean;
