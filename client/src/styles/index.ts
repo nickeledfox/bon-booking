@@ -31,6 +31,8 @@ export default createGlobalStyle`
       --c-3: #F28E13;
       --c-4: #003580;
       --c-5: rgb(61, 145, 255);
+      --c-6: #008009;
+      --c-7:#0071c2;
 
      /* Breakpoints */
       --mobile: 320px;

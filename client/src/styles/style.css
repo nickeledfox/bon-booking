@@ -4,21 +4,8 @@
 }
 
 /* List Hotels */
-
 .lsTitle {
   font-size: 20px;
   color: #fff;
   margin-bottom: 10px;
-}
-
-.listResult {
-  flex: 3;
-}
-
-/* Calendar */
-.rdrCalendarWrapper {
-  border-radius: 5px !important;
-}
-.rdrDateDisplayWrapper {
-  border-radius: 5px 5px 0 0 !important;
 }

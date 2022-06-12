@@ -20,7 +20,7 @@ export const SearchOptions = () => {
           <OptionInput type='number' />
         </Option>
         <Option>
-          <span>Adult</span>
+          <span>Adults</span>
           <OptionInput type='number' min={1} placeholder={options.adult} />
         </Option>
         <Option>
@@ -28,7 +28,7 @@ export const SearchOptions = () => {
           <OptionInput type='number' min={0} placeholder={options.children} />
         </Option>
         <Option>
-          <span>Room</span>
+          <span>Rooms</span>
           <OptionInput type='number' min={1} placeholder={options.room} />
         </Option>
       </div>

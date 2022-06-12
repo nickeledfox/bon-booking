@@ -2,41 +2,28 @@ import { useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { format } from 'date-fns';
 import { DateRange } from 'react-date-range';
+import { SearchPropertiesProps } from '../types/shared';
 
 import styled from 'styled-components';
 
-import SearchItem from '../components/SearchItem';
+import { SearchItem } from '../components/SearchItem';
 import { SideBar } from '../components/SideBar';
 import { Container } from '../styles';
 
-type SearchPropertiesProps = {
-  state: {
-    from: Location;
-    destination: string;
-    date: Date | any;
-    options: {
-      adult: string;
-      children: string;
-      room: string;
-    };
-  };
-};
-
 export const PropertiesPage = () => {
-  const location = useLocation() as unknown as SearchPropertiesProps;
-  const from = location.state?.from?.pathname || '/';
+  // const location = useLocation() as unknown as SearchPropertiesProps;
+  // const from = location.state?.from?.pathname || '/';
 
-  const [destination, setDestination] = useState(location.state.destination);
-  const [date, setDate] = useState(location.state.date);
-  const [openDate, setOpenDate] = useState(false);
-  const [options, setOptions] = useState(location.state.options);
+  // const [destination, setDestination] = useState(location.state.destination);
+  // const [date, setDate] = useState(location.state.date);
+  // const [openDate, setOpenDate] = useState(false);
+  // const [options, setOptions] = useState(location.state.options);
 
   return (
     <PageContainer>
       <InnerWrapper>
         <SideBar />
-
-        <div className='listResult'>
+        <SearchResult>
           <SearchItem />
           <SearchItem />
           <SearchItem />
@@ -46,7 +33,7 @@ export const PropertiesPage = () => {
           <SearchItem />
           <SearchItem />
           <SearchItem />
-        </div>
+        </SearchResult>
       </InnerWrapper>
     </PageContainer>
   );
@@ -63,4 +50,11 @@ const InnerWrapper = styled.div`
   max-width: 1300px;
   display: flex;
   gap: 20px;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid rgba(0, 131, 202, 0.21);
+`;
+
+const SearchResult = styled.section`
+  flex: 3;
+  margin-bottom: 13rem;
 `;

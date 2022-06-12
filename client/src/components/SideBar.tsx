@@ -47,6 +47,7 @@ export const SideBar = () => {
             color: 'var(--c-font5)',
             height: '40px',
             width: '98%',
+            paddingLeft: '10px',
           }}
           onClick={() => setOpenDate(!openDate)}
         >
@@ -112,7 +113,7 @@ const Item = styled.div`
   input {
     height: 40px;
     border: none;
-    padding: 5px 0 5px 5px;
+    padding: 5px 0 5px 10px;
     color: var(--c-font5);
 
     ::placeholder {
