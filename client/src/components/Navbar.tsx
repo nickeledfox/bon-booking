@@ -23,11 +23,7 @@ export const Navbar: React.FC = () => {
 
 const Nav = styled.nav`
   font-family: 'Raleway';
-  background: linear-gradient(
-    180deg,
-    rgba(20, 20, 20, 1) 0%,
-    rgba(20, 20, 20, 0) 100%
-  );
+  background: #0b0d17;
   display: flex;
   flex-direction: column;
   align-items: center;

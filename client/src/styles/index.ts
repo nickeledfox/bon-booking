@@ -24,7 +24,7 @@ export default createGlobalStyle`
      /* Colors */
       --c-accent: #F47920;
       --c-main: #0083CA;
-      --c-ghost: rgba(255, 255, 255, 0.15);
+      --c-ghost: rgba(196, 196, 196, 0.25);
 
       --c-1: #3B5E8C;
       --c-2: #3865e0;

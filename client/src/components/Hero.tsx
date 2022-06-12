@@ -52,12 +52,12 @@ const MainHeader = styled.header`
     background-position: center center;
     filter: brightness(85%);
     top: 0;
-    z-index: -1;
   }
 `;
 
 const HContainer = styled(Container)`
   margin: 15px 0px;
+  z-index: 10;
 
   > h5 {
     font-weight: 500;

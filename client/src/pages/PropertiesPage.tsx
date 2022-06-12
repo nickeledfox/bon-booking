@@ -42,7 +42,7 @@ export const PropertiesPage = () => {
 const PageContainer = styled(Container)`
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 7rem;
 `;
 
 const InnerWrapper = styled.div`

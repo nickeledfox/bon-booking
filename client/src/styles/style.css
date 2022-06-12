@@ -3,9 +3,14 @@
   border: 2px solid #fff !important;
 }
 
-/* List Hotels */
-.lsTitle {
-  font-size: 20px;
-  color: #fff;
-  margin-bottom: 10px;
+/* Calendar */
+.rdrCalendarWrapper {
+  border-radius: 5px;
+  position: absolute;
+  top: 10rem;
+  z-index: 100;
+}
+
+.rdrDateDisplayWrapper {
+  border-radius: 5px 5px 0 0;
 }

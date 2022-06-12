@@ -46,8 +46,7 @@ export const SideBar = () => {
             background: '#fff',
             color: 'var(--c-font5)',
             height: '40px',
-            width: '98%',
-            paddingLeft: '10px',
+            width: '100%',
           }}
           onClick={() => setOpenDate(!openDate)}
         >

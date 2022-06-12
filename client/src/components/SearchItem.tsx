@@ -80,6 +80,7 @@ const DetailText = styled.div`
 
   & :first-child {
     font-size: 24px;
+    margin-right: 1.5rem;
   }
 
   & :nth-child(2) {
