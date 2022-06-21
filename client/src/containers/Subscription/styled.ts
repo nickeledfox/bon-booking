@@ -5,7 +5,7 @@ import { H } from '../../components/Heading';
 export const Wrapper = styled.section`
   width: 100%;
   margin: 50px 0;
-  background-color: #00224f;
+  background-color: var(--c-4);
   color: white;
   display: flex;
   flex-direction: column;

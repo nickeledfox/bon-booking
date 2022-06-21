@@ -50,6 +50,8 @@ export const H = styled(Heading)(({ level }: HProps) => [
     `
   font-size: 37.9px;
   line-height: 40px;
+  margin: 0;
+
   `,
   ],
 

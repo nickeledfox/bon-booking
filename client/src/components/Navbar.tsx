@@ -23,7 +23,7 @@ export const Navbar: React.FC = () => {
 
 const Nav = styled.nav`
   font-family: 'Raleway';
-  background: #0b0d17;
+  background: var(--c-4);
   display: flex;
   flex-direction: column;
   align-items: center;
